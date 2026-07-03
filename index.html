@@ -41,11 +41,16 @@ body.noscroll {
             pointer-events: none; z-index: 1; overflow: hidden;
         }
         .particle {
-            position: absolute;
-            background: #6b7f3a;
-            border-radius: 50%;
-            opacity: 0.3;
-            animation: floatUp 15s linear infinite;
+  position: absolute;
+  color: #ffb7c5; 
+  font-size: 14px; 
+  opacity: 0.6; /
+  animation: floatUp 15s linear infinite;
+}
+.particle::before {
+  content: '❤️'; 
+}
+
         }
         @keyframes floatUp {
             0% { transform: translateY(100vh) translateX(0); opacity: 0; }
@@ -334,7 +339,7 @@ body.noscroll {
 
     <div id="envelope-overlay">
         <div class="seal-container" onclick="startExperience()">
-            <div class="wax-seal">
+            <div class="heart-shape">
                 <span class="engraving">J&G</span>
             </div>
         </div>
@@ -349,7 +354,7 @@ body.noscroll {
                 <path class="floral-path stroke-2" d="M50 100 Q30 80 30 60 Q30 40 50 50" />
                 <path class="floral-path stroke-3" d="M50 100 Q70 80 70 60 Q70 40 50 50" />
             </svg>
-            <div style="font-size: 18px; color: #6b7f3a; text-align: center; margin: 10px auto; width: 1.5cm; height: 1.5cm; display: flex; align-items: center; justify-content: center;">🕉</div>
+            <div style="font-size: 18px; color: #6b7f3a; text-align: center; margin: 10px auto; width: 1.5cm; height: 1.5cm; display: flex; align-items: center; justify-content: center;">🕉️</div>
 			<div class="script-text fade-in-up delay-2">You are invited!</div>
         </section>
 
@@ -389,7 +394,7 @@ body.noscroll {
             <div class="ceremony-card fade-in-up delay-1">
                 <h4>Wedding Ceremony</h4>
                 <p>11th November 2026 @ Thrissur</p>
-                <p>Guruvayoor Temple, Thrissur</p>
+                <p>Guruvayur Shri Krishna Temple, Thrissur</p>
 		<p>Muhoortham between 9:30 am - 10:00 am</p>
             </div>
         </section>
